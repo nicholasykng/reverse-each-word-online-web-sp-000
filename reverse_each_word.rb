@@ -1,15 +1,9 @@
 def reverse_each_word(argument)
   split_string = argument.split(" ")
   reversed = []
-  split_string.each do |character|
+  split_string.collect do |character|
     reversed << character.reverse
   end
   return reversed.join(" ")
 end
 
-def reverse_each_word(argument)
-  new = argument.split(" ")
-  new.collect do |character|
-    character.reverse.join(" ")
-  end
-end
